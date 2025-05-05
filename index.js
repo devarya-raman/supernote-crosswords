@@ -114,7 +114,7 @@ const deliverFile = async (fileName, folderId, token) => {
 
 (async () => {
   const token = await login(email, password);
-  const folderId = await getUploadFolderId("Document/Crosswords/Guardian", token);
+  const folderId = await getUploadFolderId("Document/Crosswords", token);
   const deliveries = [];
 
   if (weekdayUTC !== 0) {

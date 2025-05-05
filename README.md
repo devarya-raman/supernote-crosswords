@@ -1,6 +1,5 @@
 # Supernote Crosswords
 
-
 [![cron](https://github.com/devarya-raman/supernote-crosswords/actions/workflows/deliver-crosswords.yml/badge.svg)](https://github.com/devarya-raman/supernote-crosswords/actions/workflows/deliver-crosswords.yml)
 
 An automated utility to upload daily crosswords to your Supernote Cloud
