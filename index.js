@@ -40,6 +40,10 @@ const getUploadFolderId = async (folderPath, token) => {
     pathSegments.unshift("Document");
   }
 
+  if (pathSegments[1] !== "Crosswords") {
+    pathSegments.splice(1, 0, "Crosswords");
+  }
+
   let folderId = undefined;
 
   for (let pathSegment of pathSegments) {
@@ -114,7 +118,7 @@ const deliverFile = async (fileName, folderId, token) => {
 
 (async () => {
   const token = await login(email, password);
-  const folderId = await getUploadFolderId("Document/Crosswords", token);
+  const folderId = await getUploadFolderId("Document/Crosswords/Guardian", token);
   const deliveries = [];
 
   if (weekdayUTC !== 0) {
